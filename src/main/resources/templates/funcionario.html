@@ -6,7 +6,21 @@
     <title>funcionario</title>
 </head>
 <body>
-    <h1>Funcionário</h1>
+    <h1 id ="teste">Funcionário</h1>
+    <p>Nome:</p>
     <p th:text="${funcionario.nome}"></p>
+    <p>====================================</p>
+    <p>Setor</p>
+    <p th:text="${funcionario.setor}"></p>
+    <p>====================================</p>
+    <p>Idade</p>
+    <p th:text="${funcionario.idade}"></p>
+    <p>====================================</p>
+    <p >Endereço</p>
+    <p th:text="${funcionario.endereco}"></p>
+    <p>====================================</p>
+    <form action="http://localhost:8080/funcionarios">
+        <button type="submit">Funcionarios Cadastrados</button>
+    </form>
 </body>
 </html>

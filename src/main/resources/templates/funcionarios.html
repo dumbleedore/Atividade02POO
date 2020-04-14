@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionarios</title>
+    <link rel="stylesheet" href="estilo/css.css">
 </head>
 <body>
     <table>
         <h1>Funcionários Cadastrados:</h1>
         <tr th:each="funcionario: ${funcionarios}" >
             <td th:text=${funcionario.nome}>
-
         </tr>
     </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     <a href="/cadastro">Cadastro</a>
 </body>
 </html>

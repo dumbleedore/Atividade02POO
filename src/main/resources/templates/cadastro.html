@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro de Funcionários</h1>
-    <form action="/funcionario" method="POST">
-        <label for="nome">nome:</label><br>
-        <input type="text" name="nome" required/><br>
-        <label for="setor">setor:</label><br>
-        <input type="text" name="setor" required/><br>
-        <label for="idade">idade:</label><br>
-        <input type="text" name="idade" required/><br>
-        <label for="endereco">endereco:</label><br>
-        <input type="text" name="endereco" required/><br>
-        <br>
-        <input type="submit" name="Adicionar" required/><br>
-    </form>
+    <div class="card">
+        <div class="card-body">
+
+        <form action="/funcionario" method="POST">
+            <p class="h4 text-center py-4">Cadastro de Funcionários</p>
+            <div class="md-form">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="nome" id="materialFormCardNameEx" class="form-control" name="nome" required>
+                <label for="materialFormCardNameEx" class="font-weight-light">Nome</label>
+              </div>
+              <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="text" id="materialFormCardEmailEx" class="form-control" name="setor" required>
+                <label for="materialFormCardEmailEx" class="font-weight-light">Setor</label>
+              </div>
+              <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="text" id="materialFormCardEmailEx" class="form-control" name="idade" required>
+                <label for="materialFormCardEmailEx" class="font-weight-light">idade</label>
+              </div>
+              <div class="md-form">
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="text" id="materialFormCardEmailEx" class="form-control" name="endereco" required>
+                    <label for="materialFormCardEmailEx" class="font-weight-light">endereço</label>
+                  </div>
+              <br>
+              <br>
+              <div class="text-center py-4 mt-3">
+                <button class="btn btn-primary" type="submit">Registrar</button>
+              </div>
+        </form>
+        </div>
+        </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
